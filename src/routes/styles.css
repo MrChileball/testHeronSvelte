@@ -1,0 +1,106 @@
+:root{
+--custom-space-cadet: #2b2d42ff;
+--custom-viridian: #558564ff;
+--custom-light-yellow: #fdfcdcff;
+--custom-rose-quartz: #a4969bff;
+--custom-eerie-black: #1d201fff;
+}
+body{
+    background-color:  #2b2d42ff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 30px;
+
+    width: 96%;
+    text-decoration: none;
+  }
+.title{
+    background-color: #1d201fff;
+    font-weight: 600;
+    font-size: 24px;
+    margin:0px;
+    margin-top: 0px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: -3px 19px 17px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -3px 19px 17px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: -3px 19px 17px -1px rgba(0,0,0,0.67);
+  }
+img{
+  max-width:50%;
+  min-width:50%;
+}
+.introduction{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  text-decoration:none;
+  color: #fdfcdcff;
+
+}
+h2{
+  text-decoration:none;
+  color: #fdfcdcff;
+}
+h3{
+  text-decoration:none;
+  color: #fdfcdcff;
+  margin: 30px;
+  flex-direction: column;
+  display: flex;
+  align-self: center;
+}
+p{
+  color:#fdfcdcff;
+}
+.heronSteps{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding:8%;
+}
+.areaSteps{
+  display: flex;
+  max-width: 100%;
+  gap:3rem;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background-color:#558564ff;
+}
+.steps{
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.stepsImages{
+  max-width: 30%;
+  min-width: 20%;
+}
+.application{
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.applicationSteps {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+img {
+  align-self: center;
+  margin: 20px;
+}
