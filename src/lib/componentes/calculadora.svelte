@@ -19,7 +19,7 @@
             <p>Resultado: {area}</p>
             
         {:else}
-            <h3>Error!:</h3><p> Para que un triangulo exista la suma de dos lados debe ser mayor al tercero</p>
+            <h3>Error!:</h3><p> Para que un triángulo exista la suma de dos lados debe ser mayor al tercero</p>
         {/if}
         
     </div>

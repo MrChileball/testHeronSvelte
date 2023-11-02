@@ -6,12 +6,12 @@
     $: perim = a + b + c;
     $: semiPerim = (a+b+c)/2;
     $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
+    import RandomNumber from "./randomNumber.svelte";
 </script>
 
 <div>
     <div>
-        <h2>Calculadora Perimetro</h2>
-        <h3>Ingresa datos</h3>
+        <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
         
         {#if a+b > c && b+c > a && a+c > b }
             <p>Resultado: {perim}</p>
