@@ -1,23 +1,47 @@
 <script>
     export let min = 0;
     export let max = 0;
-  
+
+
+    $: a = 0;
+    $: b = 0;
+    $: c = 0;
+
     // Generate a random number when the component is created
-    let a = generateRandomNumber(min, max);
-    let b = generateRandomNumber(min, max);
-    let c = generateRandomNumber(min, max);
+
+   
+    
   
     // Function to generate a random number within the specified range
-    export function generateRandomNumber(min, max) {
+    export function generateRandomNumber(min, max, line1, line2, line3) {
         //Math.floor() permite redondear números hacia abajo
       //return Math.floor(Math.random() * (maximo - minimo + 1)) + min;
       min = Math.ceil(min);
       max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+
+      line1 = Math.floor(Math.random() * (max - min) + min);
+      line2 = Math.floor(Math.random() * (max - min) + min);
+      line3 = Math.floor(Math.random() * (max - min) + min);
+      
+
+
+      
+      a = line1;
+      b = line2;
+      c = line3;
+      console.log(a);
+      console.log(b);
+      console.log(c);
+
+       // The maximum is exclusive and the minimum is inclusive
+       return a;
+ 
     }
+    generateRandomNumber(min, max, a, b, c);
 
     //https://es.stackoverflow.com/questions/100833/como-obtengo-un-numero-con-1-decimal-sin-redondear-en-javascript
     let userPerim;
+    let userArea;
 
 
     $: perim = a + b + c;
@@ -48,7 +72,8 @@
 
     </div>
     <div>
-        <input type="number" placeholder="Variable 3" bind:value={userPerim}>
+        <input type="number" placeholder="Ingreso de perimetro" bind:value={userPerim}>
+        <input type="number" placeholder="Ingreso de area" bind:value={userArea}>
     </div>
     {#if userPerim == area}
     iguales
@@ -59,9 +84,7 @@
 
         <button on:click={() => (
             //Vuelve a asignar un largo aleatorio a cada lado del triangulo
-            a = generateRandomNumber(min, max),
-            b = generateRandomNumber(min, max),
-            c = generateRandomNumber(min, max)
+            generateRandomNumber(min, max, a, b, c)
         )}>
             Generate New Random Number
           </button>
