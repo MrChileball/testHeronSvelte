@@ -10,13 +10,12 @@
 
 <div>
     <div>
-        <h2>Calculadora Perimetro</h2>
-        <h3>Ingresa datos</h3>
+        <h2>Calculadora del teorema de Herón</h2>
         
         {#if a+b > c && b+c > a && a+c > b }
-            <p>Resultado: {perim}</p>
-            <p>Resultado: {semiPerim}</p>
-            <p>Resultado: {area}</p>
+            <p>Resultado del perímetro: {perim}</p>
+            <p>Resultado del semiperímetro: {semiPerim}</p>
+            <p>Resultado del área: {area}</p>
             
         {:else}
             <h3>Error!:</h3><p> Para que un triángulo exista la suma de dos lados debe ser mayor al tercero</p>
@@ -24,6 +23,7 @@
         
     </div>
     <div>
+        <h3>Ingresa datos</h3>
         <input type="number" placeholder="Variable 1" bind:value={a}>
         <input type="number" placeholder="Variable 2" bind:value={b}>
         <input type="number" placeholder="Variable 3" bind:value={c}>

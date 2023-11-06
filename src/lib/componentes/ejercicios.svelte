@@ -12,7 +12,6 @@
 <div>
     <div>
         <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
-        
         {#if a+b > c && b+c > a && a+c > b }
             <p>Resultado: {perim}</p>
             <p>Resultado: {semiPerim}</p>
