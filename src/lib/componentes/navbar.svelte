@@ -8,29 +8,6 @@
 <div class="title"> 
     <h1>{title}</h1>
 </div>
-<ul class="flex center navbar ">
-    <li>
-        <a>
-            <h3>holis</h3>
-        </a>
-    </li>
-    <li>
-        <a>
-            <h3>holis</h3>
-        </a>
-    </li>
-    <li>
-        <a>
-            <h3>holis</h3>
-        </a>
-    </li>
-    <li>
-        <a>
-            <h3>holis</h3>
-        </a>
-    </li>
-
-</ul>
 
 
 <style>

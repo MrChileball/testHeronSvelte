@@ -19,11 +19,13 @@
         </div>
     <div class="Calculador">
         <h3>Ingresa datos</h3>
-         <div><input type="number" placeholder="Variable 1" bind:value={a}>
+         <div class="Imputs">
+              <input type="number" placeholder="Variable 1" bind:value={a}>
               <input type="number" placeholder="Variable 2" bind:value={b}>
               <input type="number" placeholder="Variable 3" bind:value={c}>
            </div>   
-        <div> <p>Resultado del perímetro: {perim}</p>
+        <div class="Results"> 
+            <p>Resultado del perímetro: {perim}</p>
             <p>Resultado del semiperímetro: {semiPerim}</p>
             <p>Resultado del área: {area}</p>
       </div>  

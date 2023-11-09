@@ -109,5 +109,14 @@ img {
 }
 
 .Calculador {
-
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.Imputs {
+  display: flex;
+  margin-left: 68px;
+}
+.Results {
+  
 }
