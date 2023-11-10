@@ -8,7 +8,7 @@
     $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
 </script>
 
-<div>
+<div class="containerFlexCenter">
     <div>
         <h2>Calculadora del teorema de Herón</h2>
          {#if a+b > c && b+c > a && a+c > b }
