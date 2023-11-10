@@ -6,6 +6,7 @@
     $: perim = a + b + c;
     $: semiPerim = (a+b+c)/2;
     $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
+    $: areaOutput = (Math.trunc(area * 100))/100;
 </script>
 
 <div class="containerFlexCenter">
@@ -27,7 +28,7 @@
         <div class="Results"> 
             <p>Resultado del perímetro: {perim}</p>
             <p>Resultado del semiperímetro: {semiPerim}</p>
-            <p>Resultado del área: {area}</p>
+            <p>Resultado del área: {areaOutput}</p>
       </div>  
     </div>
     

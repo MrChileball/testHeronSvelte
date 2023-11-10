@@ -38,6 +38,8 @@
     $: perim = lado1 + lado2 + lado3;
     $: semiPerim = perim / 2;
     $: area = Math.sqrt(semiPerim * (semiPerim - lado1) * (semiPerim - lado2) * (semiPerim - lado3));
+    $: areaOutput = (Math.trunc(area * 100))/100;
+    $: console.log(areaOutput);
 
     import RandomNumber from "./randomNumber.svelte";
     onMount(() => {
@@ -45,9 +47,6 @@
     });
 </script>
 
-
-
-<!-- ... (resto del código) -->
 
 
 <div>
@@ -62,7 +61,7 @@
         {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
             <p>Resultado: {perim}</p>
             <p>Resultado: {semiPerim}</p>
-            <p>Resultado: {area}</p>
+            <p>Resultado: {areaOutput}</p>
         {:else}
             <h3>Error!</h3>
             <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
@@ -77,7 +76,7 @@
     </div>
 
 
-    {#if userPerim == perim && userArea == area}
+    {#if userPerim == perim && userArea == areaOutput}
     <p>Iguales</p>
     {:else}
     <p>Distintos</p>
