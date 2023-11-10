@@ -196,3 +196,7 @@ img {
   background-color: var(--paynes-gray);
   justify-content: center;
 }
+.titleContainer {
+  display: flex;
+  max-width: 85%;
+}
