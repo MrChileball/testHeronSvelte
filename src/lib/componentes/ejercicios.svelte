@@ -53,6 +53,10 @@
 <div>
     <div>
         <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
+
+        <p>Lado 1: {lado1}</p>
+        <p>Lado 2: {lado2}</p>
+        <p>Lado 3: {lado3}</p>
         
 
         {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
@@ -66,14 +70,18 @@
 
         
     </div>
+    
     <div>
         <input type="number" placeholder="Ingreso de perimetro" bind:value={userPerim}>
         <input type="number" placeholder="Ingreso de area" bind:value={userArea}>
     </div>
-    {#if userPerim == area}
-    iguales
+
+
+    {#if userPerim == perim && userArea == area}
+    <p>Iguales</p>
     {:else}
-    distintos
+    <p>Distintos</p>
+    
     {/if}
     <div>
 
