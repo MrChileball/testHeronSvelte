@@ -8,26 +8,29 @@
     $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
 </script>
 
-<div>
+<div class="containerFlexCenter">
     <div>
         <h2>Calculadora del teorema de Herón</h2>
-        
-        {#if a+b > c && b+c > a && a+c > b }
+         {#if a+b > c && b+c > a && a+c > b }
+           
+         {:else}
+            <h3>Error!:</h3><p> Para que un triángulo exista la suma de dos lados debe ser mayor al tercero</p>
+         {/if}
+        </div>
+    <div class="Calculador">
+        <h3>Ingresa datos</h3>
+         <div class="Imputs">
+              <input type="number" placeholder="Variable 1" bind:value={a}>
+              <input type="number" placeholder="Variable 2" bind:value={b}>
+              <input type="number" placeholder="Variable 3" bind:value={c}>
+           </div>   
+        <div class="Results"> 
             <p>Resultado del perímetro: {perim}</p>
             <p>Resultado del semiperímetro: {semiPerim}</p>
             <p>Resultado del área: {area}</p>
-            
-        {:else}
-            <h3>Error!:</h3><p> Para que un triángulo exista la suma de dos lados debe ser mayor al tercero</p>
-        {/if}
-        
+      </div>  
     </div>
-    <div>
-        <h3>Ingresa datos</h3>
-        <input type="number" placeholder="Variable 1" bind:value={a}>
-        <input type="number" placeholder="Variable 2" bind:value={b}>
-        <input type="number" placeholder="Variable 3" bind:value={c}>
-    </div>
+    
     <div>
 
     </div>

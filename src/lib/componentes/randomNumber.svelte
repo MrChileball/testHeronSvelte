@@ -24,7 +24,7 @@
     <p>Random Number: {randomNumber}</p>
   
     <!-- Button to generate a new random number -->
-    <button on:click={() => (randomNumber = generateRandomNumber(min, max))}>
+    <button on:click={() => (randomNumber = generateRandomNumber(min, max))}> 
       Generate New Random Number
     </button>
   </div>
