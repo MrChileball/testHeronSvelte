@@ -50,30 +50,35 @@
 <!-- ... (resto del código) -->
 
 
-<div>
-    <div>
+<div class="containerFlexCenter">
+    <div class="titleContainer">
         <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
-
-        <p>Lado 1: {lado1}</p>
-        <p>Lado 2: {lado2}</p>
-        <p>Lado 3: {lado3}</p>
-        
-
-        {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
-            <p>Resultado: {perim}</p>
-            <p>Resultado: {semiPerim}</p>
-            <p>Resultado: {area}</p>
-        {:else}
-            <h3>Error!</h3>
-            <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
-        {/if}
-
-        
     </div>
     
-    <div>
-        <input type="number" placeholder="Ingreso de perimetro" bind:value={userPerim}>
-        <input type="number" placeholder="Ingreso de area" bind:value={userArea}>
+    <div class="calculador">
+
+        <div>
+            <input type="number" placeholder="Ingreso de perimetro" bind:value={userPerim}>
+            <input type="number" placeholder="Ingreso de area" bind:value={userArea}>
+        </div>
+        
+
+        <div>
+            <p>Lado 1: {lado1}</p>
+            <p>Lado 2: {lado2}</p>
+            <p>Lado 3: {lado3}</p>
+            
+
+            {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
+                <p>Resultado: {perim}</p>
+                <p>Resultado: {semiPerim}</p>
+                <p>Resultado: {area}</p>
+            {:else}
+                <h3>Error!</h3>
+                <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
+            {/if}
+
+        </div>
     </div>
 
 
