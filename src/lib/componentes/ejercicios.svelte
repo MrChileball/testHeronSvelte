@@ -76,7 +76,7 @@
             {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
                 <p>Resultado: {perim}</p>
                 <p>Resultado: {semiPerim}</p>
-                <p>Resultado: {area}</p>
+                <p>Resultado: {areaOutput}</p>
             {:else}
                 <h3>Error!</h3>
                 <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>

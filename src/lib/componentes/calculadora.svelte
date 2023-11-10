@@ -26,7 +26,7 @@
            <div class="Results"> 
               <p>Resultado del perímetro: {perim}</p>
               <p>Resultado del semiperímetro: {semiPerim}</p>
-              <p>Resultado del área: {area}</p>
+              <p>Resultado del área: {areaOutput}</p>
           </div> 
              
         {:else}
