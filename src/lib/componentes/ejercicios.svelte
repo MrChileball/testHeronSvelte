@@ -38,6 +38,8 @@
     $: perim = lado1 + lado2 + lado3;
     $: semiPerim = perim / 2;
     $: area = Math.sqrt(semiPerim * (semiPerim - lado1) * (semiPerim - lado2) * (semiPerim - lado3));
+    $: areaOutput = (Math.trunc(area * 100))/100;
+    $: console.log(areaOutput);
 
     import RandomNumber from "./randomNumber.svelte";
     onMount(() => {
@@ -52,6 +54,7 @@
 
 <div class="containerFlexCenter">
     <div class="titleContainer">
+
         <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
     </div>
     
@@ -62,6 +65,7 @@
             <input type="number" placeholder="Ingreso de area" bind:value={userArea}>
         </div>
         
+
 
         <div>
             <p>Lado 1: {lado1}</p>
@@ -79,10 +83,11 @@
             {/if}
 
         </div>
+
     </div>
 
 
-    {#if userPerim == perim && userArea == area}
+    {#if userPerim == perim && userArea == areaOutput}
     <p>Iguales</p>
     {:else}
     <p>Distintos</p>

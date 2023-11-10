@@ -6,6 +6,7 @@
     $: perim = a + b + c;
     $: semiPerim = (a+b+c)/2;
     $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
+    $: areaOutput = (Math.trunc(area * 100))/100;
 </script>
 
 <div class="containerFlexCenter">
@@ -20,6 +21,7 @@
               <input type="number" placeholder="Variable 2" bind:value={b}>
               <input type="number" placeholder="Variable 3" bind:value={c}>
            </div>   
+
         {#if a+b > c && b+c > a && a+c > b }
            <div class="Results"> 
               <p>Resultado del perímetro: {perim}</p>
@@ -33,6 +35,7 @@
         </div>
               
         {/if}
+
     </div>
     
     <div>
