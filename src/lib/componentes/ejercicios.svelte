@@ -1,75 +1,70 @@
 <script>
-    export let min = 0;
-    export let max = 0;
+    import { onMount } from 'svelte';
+
+    export let min = 7;
+    export let max = 30;
 
 
-    $: a = 0;
-    $: b = 0;
-    $: c = 0;
 
-    // Generate a random number when the component is created
+    let lado1;
+    let lado2;
+    let lado3;
 
-   
-    
-  
-    // Function to generate a random number within the specified range
-    export function generateRandomNumber(min, max, line1, line2, line3) {
-        //Math.floor() permite redondear números hacia abajo
-      //return Math.floor(Math.random() * (maximo - minimo + 1)) + min;
-      min = Math.ceil(min);
-      max = Math.floor(max);
+    // Generate a random number within the specified range
+    function generateRandomNumber() {
+        
 
-      line1 = Math.floor(Math.random() * (max - min) + min);
-      line2 = Math.floor(Math.random() * (max - min) + min);
-      line3 = Math.floor(Math.random() * (max - min) + min);
-      
+        do {
+            lado1 = Math.floor(Math.random() * max) + 1;
+            lado2 = Math.floor(Math.random() * max) + 1;
+            lado3 = Math.floor(Math.random() * max) + 1;
 
+        } while (!(lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1));
+        console.log(lado1);
+        console.log(lado2);
+        console.log(lado3);
 
-      
-      a = line1;
-      b = line2;
-      c = line3;
-      console.log(a);
-      console.log(b);
-      console.log(c);
-
-       // The maximum is exclusive and the minimum is inclusive
-       return a;
- 
+        return [lado1, lado2, lado3];
     }
-    generateRandomNumber(min, max, a, b, c);
 
-    //https://es.stackoverflow.com/questions/100833/como-obtengo-un-numero-con-1-decimal-sin-redondear-en-javascript
+// Generar lados hasta obtener un triángulo válido
+
+
+
+
     let userPerim;
-    let userArea;
+    let userArea; 
 
+    $: perim = lado1 + lado2 + lado3;
+    $: semiPerim = perim / 2;
+    $: area = Math.sqrt(semiPerim * (semiPerim - lado1) * (semiPerim - lado2) * (semiPerim - lado3));
 
-    $: perim = a + b + c;
-    $: semiPerim = (a+b+c)/2;
-    $: area = Math.sqrt(semiPerim*(semiPerim-a)*(semiPerim-b)*(semiPerim-c));
     import RandomNumber from "./randomNumber.svelte";
+    onMount(() => {
+        generateRandomNumber();
+    });
 </script>
+
+
+
+<!-- ... (resto del código) -->
+
 
 <div>
     <div>
         <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
         
 
-        {#if a+b > c && b+c > a && a+c > b }
+        {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
             <p>Resultado: {perim}</p>
             <p>Resultado: {semiPerim}</p>
             <p>Resultado: {area}</p>
-            
         {:else}
-            <h3>Error!</h3><p> Para que un triangulo exista la suma de dos lados debe ser mayor al tercero</p>
+            <h3>Error!</h3>
+            <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
         {/if}
-        
-    </div>
-    <div>
-        <input type="number" placeholder="Variable 1" bind:value={a}>
-        <input type="number" placeholder="Variable 2" bind:value={b}>
-        <input type="number" placeholder="Variable 3" bind:value={c}>
 
+        
     </div>
     <div>
         <input type="number" placeholder="Ingreso de perimetro" bind:value={userPerim}>
@@ -84,7 +79,7 @@
 
         <button on:click={() => (
             //Vuelve a asignar un largo aleatorio a cada lado del triangulo
-            generateRandomNumber(min, max, a, b, c)
+            generateRandomNumber(max, min)
         )}>
             Generate New Random Number
           </button>
