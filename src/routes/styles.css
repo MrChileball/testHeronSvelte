@@ -23,7 +23,7 @@
     --mauve: #c277a3;
     --dusty-purple: #9b5d99;
     --dark-purple: #62417d;
-    --midnight-blue: #0c0f32;
+    --midnight-blue: #a5a8c5;
     --dark-blue: #252a6f;
     --blue: #34539e;
     --sky-blue: #457bb4;
@@ -32,6 +32,7 @@
     --blue-gray: #97a6b7;
     --slate: #7b8aa4;
     --dark-slate: #5a6685;
+    --aquarion: #505f59;
 
     /* CSS HEX */
   --lavender-blush: #f3e8eeff;
@@ -39,6 +40,7 @@
   --cambridge-blue: #729b79ff;
   --paynes-gray: #475b63ff;
   --raisin-black: #2e2c2fff;
+  --amethyst: #39323b;
 }
 body{
     background-color:  var(--raisin-black);
@@ -54,7 +56,7 @@ body{
     padding-top: 2rem;
   }
 .title{
-    background-color: var(--cambridge-blue);
+    background-color: var(--aquarion);
     font-weight: 600;
     font-size: 24px;
     margin: 0px;
@@ -193,7 +195,7 @@ img {
   border-radius: 16px;
   flex-direction: column;
   align-items: center;
-  background-color: var(--paynes-gray);
+  background-color: var(--amethyst);
   justify-content: center;
 }
 .titleContainer {
