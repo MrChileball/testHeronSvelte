@@ -6,6 +6,8 @@
 
     import Navbar from "$lib/componentes/navbar.svelte";
 
+
+
 </script>
 
 <body class="introduction">
