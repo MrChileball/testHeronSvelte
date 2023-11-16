@@ -9,7 +9,7 @@
     
 
     import Navbar from "$lib/componentes/navbar.svelte";
-    import Calculadora from "../lib/componentes/calculadora.svelte";
+
    
     import Ejercicios from "$lib/componentes/ejercicios.svelte";
 
@@ -19,7 +19,6 @@
     <Navbar title="Teorema de Herón"/>
 
     <Ejercicios min=10 max=20/>
-    <Calculadora />
 
     <h2>¿Qué es el teorema de Herón?</h2>
     <p>El teorema de Herón es un teorema creado por Herón de Alejandría para calcular el perímetro, el semiperímetro y el área de un triángulo a partir de las longitudes de sus 3 lados.</p>
