@@ -13,10 +13,10 @@
 
 <nav class="navbar">
     <ul class="navbar-list">
-      <li class="navbar-item"><a href="/">Carlita</a></li>
-      <li class="navbar-item"><a href="/calculadora">Acerca</a></li>
-      <li class="navbar-item"><a href="/blog/architecture.html">Servicios</a></li>
-      <li class="navbar-item"><a href="#">Productos</a></li>
+      <li class="navbar-item"><a href="/">Inicio</a></li>
+      <li class="navbar-item"><a href="/tutorial">Tutorial</a></li>
+      <li class="navbar-item"><a href="/calculadora">Calculadora</a></li>
+      <li class="navbar-item"><a href="/ejercicios">Ejercicios</a></li>
     </ul>
   </nav>
 

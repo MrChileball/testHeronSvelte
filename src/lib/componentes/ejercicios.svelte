@@ -55,7 +55,7 @@
 <div class="containerFlexCenter">
     <div class="titleContainer">
 
-        <h2>Generador de ejercicios aleatorios para resolución del usuario.</h2>
+        <h2 style="align-content: center;">Generador de ejercicios aleatorios para resolución del usuario.</h2>
     </div>
     
     <div class="calculador">
@@ -74,9 +74,6 @@
             
 
             {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
-                <p>Resultado: {perim}</p>
-                <p>Resultado: {semiPerim}</p>
-                <p>Resultado: {areaOutput}</p>
             {:else}
                 <h3>Error!</h3>
                 <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
@@ -88,9 +85,9 @@
 
 
     {#if userPerim == perim && userArea == areaOutput}
-    <p>Iguales</p>
+    <p>Correcto ¡felicidades!</p>
     {:else}
-    <p>Distintos</p>
+    <p>Uno o más datos de los ingresados están incorrectos.</p>
     
     {/if}
     <div>
