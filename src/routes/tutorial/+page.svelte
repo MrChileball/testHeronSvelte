@@ -12,14 +12,17 @@
 </script>
 
 <body class="introduction">
-    <Navbar title="Teorema de Herón"/>
+    <Navbar title="Explicación"/>
 
 <div class="containerFlexCenter">
     <h2>¿Qué es el teorema de Herón?</h2>
     <p>El teorema de Herón es un teorema creado por Herón de Alejandría para calcular el perímetro, el semiperímetro y el área de un triángulo a partir de las longitudes de sus 3 lados.</p>
     <p>Podemos apreciar las fórmulas en la siguiente imagen:</p>
-</div>
     <img src={heronF} alt="Semiperímetro: La suma de los lados partida por 2. Área: ">
+</div>
+
+    
+<div class="containerFlexCenter">
     <div class="heronSteps">
         <h2>¿Cómo aplicamos el teorema de Herón?</h2>
         <div class="application">
@@ -32,8 +35,11 @@
             </div>
         </div>
 
-        <h3>Pasos para sacar el área de un triángulo usando teorema de Herón</h3>
+        
+</div>
+
         <div class= "areaSteps">
+            <h2>Pasos para sacar el área de un triángulo usando teorema de Herón:</h2>
             <div class= "steps">
                 <p>1. Definir los lados a, b y c.</p>
                 <img src = {imageStep1} alt= "4cm = a / 3cm = b / 5cm = c" class="stepsImages">

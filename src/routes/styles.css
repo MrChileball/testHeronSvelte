@@ -17,7 +17,8 @@
     --dark-red: #a43c3c;
     --rust: #59160e;
     --brownish-red: #773c35;
-    --dusty-rose: #9e6257;
+    --dusty-rose-original: #9e6257;
+    --dusty-rose: hsl(196, 16%, 27%);
     --dusty-pink: #d3847a;
     --soft-pink: #db96ad;
     --mauve: #c277a3;
@@ -68,6 +69,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    padding-bottom: 5rem;
   }
 .title{
     background-color: var(--aquarion);
@@ -150,7 +152,10 @@ p{
   flex-direction: column;
   padding: 2rem;
   border-radius: 1.2rem;
-  background-color:#558564ff;
+  background-color: var(--dusty-rose);
+}
+.navbar-item{
+  color: var(--ash-gray);
 }
 .steps{
   display: flex;

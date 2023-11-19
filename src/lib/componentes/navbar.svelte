@@ -26,8 +26,9 @@
         margin: 0px;
         padding: 0px;
         transition: all ease-in 0.3s;
+        border-radius: 7px;
     }
-    li:hover{
+    li:hover, li:active{
         background-color: #558564ff;
     }
     .navbar{
@@ -77,7 +78,8 @@ ol, ul {
     padding-left: 2rem;
 }
 
-
+a{
+    color: rgb(204, 213, 198)}
 .navbar-item {
     padding: 12px 22px;
     transition: background-color .45s,border-left .45s,border-top .45s,border-bottom .45s,border-right .45s,padding 1.0s;
