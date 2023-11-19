@@ -27,9 +27,9 @@
 
         {#if a+b > c && b+c > a && a+c > b }
            <div class="Results"> 
-              <p>Resultado del perímetro: {perim}</p>
-              <p>Resultado del semiperímetro: {semiPerim}</p>
-              <p>Resultado del área: {areaOutput}</p>
+              <p>Resultado del perímetro: {perim}cm</p>
+              <p>Resultado del semiperímetro: {semiPerim}cm</p>
+              <p>Resultado del área: {areaOutput}cm</p>
           </div> 
              
         {:else}
