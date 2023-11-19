@@ -20,9 +20,6 @@
             lado3 = Math.floor(Math.random() * max) + 1;
 
         } while (!(lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1));
-        console.log(lado1);
-        console.log(lado2);
-        console.log(lado3);
 
         return [lado1, lado2, lado3];
     }
@@ -39,7 +36,7 @@
     $: semiPerim = perim / 2;
     $: area = Math.sqrt(semiPerim * (semiPerim - lado1) * (semiPerim - lado2) * (semiPerim - lado3));
     $: areaOutput = (Math.trunc(area * 100))/100;
-    $: console.log(areaOutput);
+    $: console.log("Area del triangulo: ", areaOutput);
 
     import RandomNumber from "./randomNumber.svelte";
     onMount(() => {
@@ -68,9 +65,9 @@
 
 
         <div>
-            <p>Lado 1: {lado1}</p>
-            <p>Lado 2: {lado2}</p>
-            <p>Lado 3: {lado3}</p>
+            <p>Lado 1: {lado1}cm</p>
+            <p>Lado 2: {lado2}cm</p>
+            <p>Lado 3: {lado3}cm</p>
             
 
             {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
@@ -85,7 +82,9 @@
 
 
     {#if userPerim == perim && userArea == areaOutput}
-    <p>Correcto ¡felicidades!</p>
+    <p>Correcto, ¡felicidades!</p>
+    {:else if userArea == null && userPerim == null}
+    <p></p>
     {:else}
     <p>Uno o más datos de los ingresados están incorrectos.</p>
     
