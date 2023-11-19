@@ -9,6 +9,9 @@
     $: areaOutput = (Math.trunc(area * 100))/100;
 </script>
 
+
+
+
 <div class="containerFlexCenter">
     <div>
         <h2>Calculadora del teorema de Herón</h2>
@@ -43,6 +46,8 @@
     </div>
 
 </div>
+
+
 
 
 
