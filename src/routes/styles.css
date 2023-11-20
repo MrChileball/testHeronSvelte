@@ -92,7 +92,7 @@ body{
     */
   }
 img{
-  max-width:50%;
+  max-width:100%;
   min-width:50%;
 }
 input{
@@ -233,4 +233,12 @@ img {
 .navbar{
   display: flex;
   flex-direction: column;
+}
+.Difficulties{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 30px;
+  padding-inline: 80px;
 }
