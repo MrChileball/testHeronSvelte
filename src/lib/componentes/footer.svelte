@@ -30,7 +30,8 @@
         Web hecha por Esteban Pérez.
         <br>
         Maximiliano Marín.<br>
-        Matías Gonzales.
+        Matías González. <br>
+        Grupo 2 PCP 
       </p>
     </div>
 </footer>

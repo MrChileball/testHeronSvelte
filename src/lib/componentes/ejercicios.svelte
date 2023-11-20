@@ -54,7 +54,32 @@
 
         <h2 style="align-content: center;">Generador de ejercicios aleatorios para resolución del usuario.</h2>
     </div>
+    <div>
+        <h3>Seleccione dificultad de ejercicios:</h3>
     
+        <div class="Difficulties">
+        <button on:click={() => (max = 30)}>
+            
+         Fácil
+
+        </button>
+
+
+        <button on:click={() => (max = 45)}>
+            
+        Intermedia
+
+        </button>
+
+
+        <button on:click={() => (max = 60)}>
+           
+           Díficil
+
+        </button>
+        
+        </div>
+    </div>
     <div class="calculador">
 
         <div>
@@ -68,13 +93,7 @@
             <p>Lado 1: {lado1}cm</p>
             <p>Lado 2: {lado2}cm</p>
             <p>Lado 3: {lado3}cm</p>
-            
-
-            {#if lado1 + lado2 > lado3 && lado3 + lado1 > lado2 && lado3 + lado2 > lado1 }
-            {:else}
-                <h3>Error!</h3>
-                <p> Para que un triángulo exista, la suma de dos lados debe ser mayor que el tercero</p>
-            {/if}
+        
 
         </div>
 
@@ -87,7 +106,7 @@
     <p></p>
     {:else}
     <p>Uno o más datos de los ingresados están incorrectos.</p>
-    
+
     {/if}
     <div>
 
@@ -95,7 +114,7 @@
             //Vuelve a asignar un largo aleatorio a cada lado del triangulo
             generateRandomNumber(max, min)
         )}>
-            Generate New Random Number
+            Generar nuevo número aleatorio.
           </button>
     </div>
 
