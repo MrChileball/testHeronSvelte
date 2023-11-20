@@ -52,27 +52,28 @@
 <div class="containerFlexCenter">
     <div class="titleContainer">
 
-        <h2 style="align-content: center;">Generador de ejercicios aleatorios para resolución del usuario.</h2>
+        <h2 style="align-content: center;">Generador de ejercicios aleatorios.</h2>
     </div>
     <div>
         <h3>Seleccione dificultad de ejercicios:</h3>
     
         <div class="Difficulties">
-        <button on:click={() => (max = 30)}>
+        <button on:click={() => (max = 30
+        , generateRandomNumber())}>
             
          Fácil
 
         </button>
 
 
-        <button on:click={() => (max = 45)}>
+        <button on:click={() => (max = 45, generateRandomNumber())}>
             
         Intermedia
 
         </button>
 
 
-        <button on:click={() => (max = 60)}>
+        <button on:click={() => (max = 60, generateRandomNumber())}>
            
            Díficil
 
@@ -101,6 +102,10 @@
 
 
     {#if userPerim == perim && userArea == areaOutput}
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M5 12l5 5l10 -10" />
+      </svg>
     <p>Correcto, ¡felicidades!</p>
     {:else if userArea == null && userPerim == null}
     <p></p>
