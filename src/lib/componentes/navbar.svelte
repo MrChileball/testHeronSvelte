@@ -27,6 +27,7 @@
         padding: 0px;
         transition: all ease-in 0.3s;
         border-radius: 7px;
+        width: 100%;
     }
     li:hover, li:active{
         background-color: #558564ff;
