@@ -38,7 +38,6 @@
     $: areaOutput = (Math.trunc(area * 100))/100;
     $: console.log("Area del triangulo: ", areaOutput);
 
-    import RandomNumber from "./randomNumber.svelte";
     onMount(() => {
         generateRandomNumber();
     });
@@ -58,8 +57,7 @@
         <h3>Seleccione dificultad de ejercicios:</h3>
     
         <div class="Difficulties">
-        <button on:click={() => (max = 30
-        , generateRandomNumber())}>
+        <button on:click={() => (max = 30, generateRandomNumber())}>
             
          Fácil
 
