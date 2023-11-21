@@ -8,6 +8,7 @@
     import Warning from '$lib/componentes/warning.svelte';
 
     //ICONO
+    let textWarning = "TestHeronSvelte es una aplicación que explica de manera rápida y sencilla cómo utilizar el teorema de Herón. Además, contamos con una calculadora y un sistema de ejercicios para resolver en base a niveles de dificultad. "
     let icon = "M11 12h1v4h1 M12 9h.01 M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z";
 
 
@@ -18,6 +19,8 @@
  <body class="introduction">
     
     <Navbar title="Teorema de Herón"/>
+
+    <Warning {textWarning} {icon}/>
 
     <div class="containerFlexCenter">
     <h2>¿Qué es el teorema de Herón?</h2>
