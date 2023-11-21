@@ -22,7 +22,7 @@ https://nodejs.org/en
 
 https://code.visualstudio.com
 
-Instala las dependencias necesarias
+Ve al directorio del proyecto descomprimido e instala las dependencias necesarias
 `npm install` e inicia un servidor de desarrollo:
 
 ```bash
