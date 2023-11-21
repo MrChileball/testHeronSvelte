@@ -2,7 +2,7 @@
 
 Proyecto creado por Esteban Pérez, Maximiliano Marín y Matías González.
 
-## Descarga
+## Descargas
 
 Descarga el comprimido con el código fuente del proyecto en la pestaña de **Releases**
 
@@ -10,9 +10,17 @@ Descarga el comprimido con el código fuente del proyecto en la pestaña de **Re
 
 ```bash
 # Descarga la versión 1.0
+
 ```
 
+
 ## Instalación
+
+Descarga e instala NodeJS (versión LTS) y VScode:
+
+https://nodejs.org/en
+
+https://code.visualstudio.com
 
 Instala las dependencias necesarias
 `npm install` e inicia un servidor de desarrollo:
