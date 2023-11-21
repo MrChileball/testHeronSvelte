@@ -6,7 +6,7 @@
 <footer class="footer">
     <div class="footer-left">
       <img src={Svelte} alt="Logo">
-      <div class="rights">App escrita con JavaScript</div>
+      <div class="rights">App escrita en JavaScript</div>
     </div>
     <div class="footer-center">
       <ul class="footer-links">
