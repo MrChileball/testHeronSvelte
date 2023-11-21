@@ -1,38 +1,38 @@
-# create-svelte
+# TestHeronSvelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Proyecto creado por Esteban Pérez, Maximiliano Marín y Matías González.
 
-## Creating a project
+## Descarga
 
-If you're seeing this, you've probably already done this step. Congrats!
+Descarga el comprimido con el código fuente del proyecto en la pestaña de **Releases**
+
+
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+# Descarga la versión 1.0
 ```
 
-## Developing
+## Instalación
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Instala las dependencias necesarias
+`npm install` e inicia un servidor de desarrollo:
 
 ```bash
+# ejecutar comando dentro de la consola de VScode o un terminal dentro del directorio del proyecto
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# Para abrir una pestaña de navegador al iniciar el servidor
 npm run dev -- --open
 ```
 
-## Building
+## Despliegue
 
-To create a production version of your app:
+Para crear una versión de producción de la aplicación ejecute el comando en el terminal
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Puedes ver la versión de producción con el comando `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> Se puede desplegar el proyecto en algún sitio como Netlify o Vercel.
