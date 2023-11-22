@@ -6,6 +6,8 @@ Proyecto creado por Esteban Pérez, Maximiliano Marín y Matías González.
 
 Descarga el comprimido con el código fuente del proyecto en la pestaña de **Releases**
 
+https://github.com/MrChileball/testHeronSvelte/releases/tag/Entrega
+
 
 
 ```bash
